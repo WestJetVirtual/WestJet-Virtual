@@ -2,126 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>WestJet Virtual - Fleet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fleet | WestJet Virtual</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f2f9ff;
-      color: #00334e;
-    }
-    header {
-      background-color: #00334e;
-      display: flex;
-      align-items: center;
-      padding: 10px 20px;
-      justify-content: space-between;
-    }
-    header img {
-      height: 50px;
-    }
-    nav a {
-      color: white;
-      margin-left: 15px;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    .fleet-card {
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      margin-bottom: 30px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-    }
-    .fleet-card img {
-      width: 100%;
-      height: auto;
-    }
-    .fleet-card .details {
-      padding: 20px;
-    }
-    .fleet-card h2 {
-      margin-top: 0;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #00334e;
-      color: white;
-      margin-top: 40px;
-    }
-  </style>
 </head>
 <body>
-
-<header>
-  <img src="https://cdn.discordapp.com/attachments/1119104755613048916/1359262428637954059/image0.jpg?ex=67f6d748&is=67f585c8&hm=b944b135b6c231b6a8571bfecec65f74a5a1a5a7cc6880ec90cc802e9d35d0b9&" alt="WestJet Virtual Logo" />
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="fleet.html">Fleet</a>
-    <a href="staff.html">Staff</a>
-    <a href="join.html">Join</a>
-  </nav>
-</header>
-
-<div class="container">
-  <div class="fleet-card">
-    <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/0/0/c/00c4b738732ab9f0760e3ec458d27a73720534d9.png" alt="Q400">
-    <div class="details">
-      <h2>Bombardier Dash 8 Q400</h2>
-      <p>Perfect for regional routes across Canada and the northern U.S., the Q400 offers efficiency, speed, and reliability to connect smaller markets to our main hubs.</p>
+  <header class="header">
+    <div class="logo">
+      <img src="https://cdn.discordapp.com/attachments/1119104755613048916/1359262428637954059/image0.jpg?ex=67f6d748&is=67f585c8&hm=b944b135b6c231b6a8571bfecec65f74a5a1a5a7cc6880ec90cc802e9d35d0b9&" alt="WestJet Virtual Logo" />
     </div>
-  </div>
+    <nav class="nav-buttons">
+      <a href="index.html">Home</a>
+      <a href="staff.html">Staff</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
 
-  <div class="fleet-card">
-    <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/5/c/a/5caffe65095591bb3226a3458b03ee3e044dca68.png" alt="Boeing 737-700">
-    <div class="details">
-      <h2>Boeing 737-700</h2>
-      <p>The 737-700 is a versatile narrow-body aircraft used on a wide range of domestic and transborder flights, offering comfort and performance for mid-range routes.</p>
+  <main class="main-content">
+    <h1 class="page-title">Our Fleet</h1>
+
+    <div class="fleet-container">
+      <div class="fleet-card">
+        <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/0/0/c/00c4b738732ab9f0760e3ec458d27a73720534d9.png" alt="Q400">
+        <h2>Q400</h2>
+        <p>Perfect for short regional hops, the Q400 offers efficient and comfortable service for lower-demand routes.</p>
+      </div>
+
+      <div class="fleet-card">
+        <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/5/c/a/5caffe65095591bb3226a3458b03ee3e044dca68.png" alt="B737-700">
+        <h2>Boeing 737-700</h2>
+        <p>The 737-700 is a workhorse in our fleet, serving medium-range destinations across Canada and the U.S.</p>
+      </div>
+
+      <div class="fleet-card">
+        <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/2/2/f/22fd44a4a0fff6d282c9446b36147ce594c1f055.png" alt="B737-800">
+        <h2>Boeing 737-800</h2>
+        <p>Offering greater capacity, the 737-800 balances range, performance, and passenger comfort.</p>
+      </div>
+
+      <div class="fleet-card">
+        <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/3/6/a/36abf67e1028f8f8b5247094bbac6c9d222f5647.png" alt="B737-8MAX">
+        <h2>Boeing 737 MAX 8</h2>
+        <p>Our next-generation narrow-body aircraft, providing fuel efficiency and advanced comfort features.</p>
+      </div>
+
+      <div class="fleet-card">
+        <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/9/4/8/948968c7592450d985780321559a665a77bcc6e7.png" alt="B787-9">
+        <h2>Boeing 787-9 Dreamliner</h2>
+        <p>Serving our longest routes, the 787-9 offers passengers a premium international travel experience.</p>
+      </div>
     </div>
-  </div>
+  </main>
 
-  <div class="fleet-card">
-    <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/2/2/f/22fd44a4a0fff6d282c9446b36147ce594c1f055.png" alt="Boeing 737-800">
-    <div class="details">
-      <h2>Boeing 737-800</h2>
-      <p>The backbone of our fleet, the 737-800 serves high-demand routes across North America, offering passengers modern amenities and fuel efficiency.</p>
-    </div>
-  </div>
-
-  <div class="fleet-card">
-    <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/3/6/a/36abf67e1028f8f8b5247094bbac6c9d222f5647.png" alt="Boeing 737 MAX 8">
-    <div class="details">
-      <h2>Boeing 737 MAX 8</h2>
-      <p>Our most advanced narrow-body aircraft, the MAX 8 features improved fuel efficiency and longer range, allowing us to reach more destinations with lower emissions.</p>
-    </div>
-  </div>
-
-  <div class="fleet-card">
-    <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/9/4/8/948968c7592450d985780321559a665a77bcc6e7.png" alt="Boeing 787-9 Dreamliner">
-    <div class="details">
-      <h2>Boeing 787-9 Dreamliner</h2>
-      <p>WestJet’s flagship aircraft, the 787-9 connects us to international destinations in comfort and style. With cutting-edge cabin features, it redefines long-haul travel.</p>
-    </div>
-  </div>
-</div>
-
-<footer>
-  <p>&copy; WestJet Virtual 2025</p>
-  <p>WestJet Virtual is not affiliated with WestJet Airlines in any way, shape, or form.</p>
-</footer>
-
+  <footer class="footer">
+    <p>&copy; 2025 WestJet Virtual</p>
+    <p>WestJet Virtual is not affiliated or associated with WestJet Airlines in any way, shape, or form.</p>
+  </footer>
 </body>
 </html>
