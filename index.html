@@ -14,33 +14,50 @@
         }
 
         header {
+            position: relative;
             text-align: center;
-            padding: 20px;
-            background-color: #005a8f;
             color: white;
         }
 
         header img {
-            max-width: 150px;
-            margin-bottom: 20px;
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            filter: brightness(50%);
         }
 
-        h1, h2 {
-            font-size: 2em;
-            color: #333;
+        header .header-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        header h1 {
+            font-size: 4em;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 20px;
+            font-weight: lighter;
         }
 
         nav {
             background-color: #004a76;
-            padding: 10px;
+            padding: 15px;
             text-align: center;
         }
 
         nav a {
             color: white;
-            margin: 0 15px;
+            margin: 0 20px;
             text-decoration: none;
             font-weight: bold;
+            text-transform: uppercase;
         }
 
         nav a:hover {
@@ -48,11 +65,42 @@
         }
 
         .container {
-            padding: 20px;
+            padding: 50px;
             background-color: white;
-            margin: 20px;
+            margin-top: -20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-us {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .about-us h2 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .about-us p {
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .ceo-message {
+            text-align: center;
+        }
+
+        .ceo-message h3 {
+            font-size: 2em;
+            color: #005a8f;
+            margin-bottom: 10px;
+        }
+
+        .ceo-message p {
+            font-size: 1.2em;
+            color: #333;
         }
 
         footer {
@@ -65,35 +113,31 @@
             bottom: 0;
         }
 
-        .message-from-ceo {
-            text-align: center;
-            margin-top: 50px;
-        }
+        /* Mobile Responsiveness */
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
 
-        .about-us {
-            text-align: center;
-            margin-top: 50px;
-        }
+            header p {
+                font-size: 1em;
+            }
 
-        .about-us h2 {
-            font-size: 2em;
-            color: #333;
-        }
+            .container {
+                padding: 30px;
+            }
 
-        .about-us p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            color: #666;
-        }
+            .about-us h2 {
+                font-size: 2em;
+            }
 
-        .ceo-message h3 {
-            font-size: 2em;
-            color: #005a8f;
-        }
+            .ceo-message h3 {
+                font-size: 1.5em;
+            }
 
-        .ceo-message p {
-            font-size: 1.2em;
-            color: #333;
+            .ceo-message p {
+                font-size: 1em;
+            }
         }
 
     </style>
@@ -101,8 +145,11 @@
 <body>
 
 <header>
-    <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg?ex=67f5a5eb&is=67f4546b&hm=40b4fedcf91413261f8e3084c5ce01d3730fd97d3837abe7a2cc0b7cae41a413&" alt="WestJet Virtual Logo">
-    <h1>Welcome to WestJet Virtual</h1>
+    <img src="https://www.westjet.com/content/dam/westjet/images/aircraft/exterior/737-max-8/landscape-16-9/230502-WestJet-MAX8-Clouds-1600x900.jpg" alt="WestJet Virtual Aircraft">
+    <div class="header-content">
+        <h1>Welcome to WestJet Virtual</h1>
+        <p>Experience the skies with professionalism and realism in Infinite Flight.</p>
+    </div>
 </header>
 
 <nav>
@@ -115,15 +162,12 @@
 <div class="container">
     <div class="about-us">
         <h2>About Us</h2>
-        <p>WestJet Virtual is a flight simulation community that replicates the operations of the real-world WestJet Airlines, offering an exciting and realistic experience for pilots in Infinite Flight. Our team is committed to creating a fun and professional virtual airline where all members can enjoy the thrill of virtual aviation.</p>
+        <p>WestJet Virtual is a flight simulation community that replicates the operations of the real-world WestJet Airlines. Our goal is to provide an engaging and realistic flying experience for pilots in Infinite Flight. Join us and experience the skies like never before.</p>
     </div>
 
-    <div class="message-from-ceo">
-        <h2>Message from our CEO</h2>
-        <div class="ceo-message">
-            <h3><a href="https://community.infiniteflight.com/u/pilot_infiniteflight" target="_blank">Pilot_InfiniteFlight</a> - CEO</h3>
-            <p>Welcome to WestJet Virtual! We’re committed to providing an exciting and rewarding experience for all members. We aim to keep growing and improving our virtual airline to ensure our pilots have the best experience possible. I’m excited to have you on this journey with us, and I look forward to seeing you in the skies!</p>
-        </div>
+    <div class="ceo-message">
+        <h3><a href="https://community.infiniteflight.com/u/pilot_infiniteflight" target="_blank">Pilot_InfiniteFlight</a> - CEO</h3>
+        <p>Welcome to WestJet Virtual! We’re committed to providing a professional and exciting virtual airline experience for all our members. Whether you’re a seasoned virtual pilot or new to the world of flight simulation, we’re thrilled to have you on board.</p>
     </div>
 </div>
 
