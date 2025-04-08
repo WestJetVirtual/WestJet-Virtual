@@ -1,168 +1,94 @@
-/* General Page Styles */
-* {
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
-body {
-    background-color: #f0f5f9;
-    background-image: url('https://www.westjet.com/content/dam/westjet/images/aircraft/exterior/737-max-8/landscape-16-9/230502-WestJet-MAX8-Saskatchewan-1600x900.jpg'); /* WestJet MAX8 image */
+    background-image: url('https://www.westjet.com/content/dam/westjet/images/aircraft/exterior/737-max-8/landscape-16-9/230502-WestJet-MAX8-Saskatchewan-1600x900.jpg');
     background-size: cover;
     background-position: center;
-    color: #333;
+    color: #fff;
 }
 
-/* Header Styles */
 header {
-    background-color: rgba(0, 111, 142, 0.85); /* WestJet blue with opacity for a subtle effect */
-    padding: 10px 0;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
     position: relative;
-    z-index: 10;
 }
 
 header .logo img {
-    width: 180px;
+    height: 50px;
 }
 
 nav.nav-links {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 10px;
+    gap: 20px;
 }
 
 nav.nav-links a {
-    color: white; /* Text color matches header */
-    font-size: 18px;
+    color: white;
     text-decoration: none;
-    padding: 10px 18px;
-    transition: color 0.3s ease;
+    font-size: 18px;
 }
 
-nav.nav-links a:hover {
-    color: #0085c2; /* WestJet light blue on hover */
-}
-
-/* Main Content Section */
-.main-content {
-    padding: 30px;
+main-content {
+    padding: 50px;
     text-align: center;
 }
 
-.main-content h1 {
-    font-size: 38px;
-    color: #006f8e; /* WestJet blue */
-    margin-bottom: 20px;
+h1 {
+    font-size: 2.5rem;
 }
 
-.main-content p {
-    font-size: 18px;
-    color: #555;
-}
-
-/* About Us Section */
-.about-us {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.about-us h2 {
-    font-size: 30px;
-    color: #0085c2; /* WestJet light blue */
-    margin-bottom: 15px;
-}
-
-.about-us p {
-    font-size: 18px;
-    color: #555;
-}
-
-/* CEO Message Section */
-.ceo-message {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.ceo-message h2 {
-    font-size: 30px;
-    color: #0085c2;
-    margin-bottom: 15px;
+.about-us, .ceo-message {
+    padding: 30px;
+    text-align: center;
 }
 
 .ceo-profile {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
-    text-align: left;
+    justify-content: center;
+    gap: 20px;
 }
 
 .ceo-profile img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%; /* Circle for profile picture */
-    margin-right: 20px;
-    border: 3px solid #006f8e; /* Blue border for a clean look */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #fff;
 }
 
-.ceo-info p {
-    font-size: 18px;
-    color: #555;
+.ceo-info {
+    max-width: 600px;
 }
 
-.ceo-info a {
-    color: #006f8e;
-    text-decoration: none;
-}
-
-.ceo-info a:hover {
-    text-decoration: underline;
-}
-
-/* Footer Section */
 footer {
-    background-color: #006f8e; /* WestJet blue */
-    color: white;
-    padding: 15px 0;
     text-align: center;
-    margin-top: 40px;
-}
-
-footer p {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
     font-size: 14px;
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
     nav.nav-links {
         flex-direction: column;
         gap: 10px;
     }
-
-    .main-content h1 {
-        font-size: 28px;
-    }
-
-    .about-us h2, .ceo-message h2 {
-        font-size: 24px;
-    }
-
+    
     .ceo-profile {
         flex-direction: column;
-        align-items: center;
     }
-
-    .ceo-profile img {
-        width: 100px;
-        height: 100px;
+    
+    .main-content h1 {
+        font-size: 1.8rem;
     }
 }
