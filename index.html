@@ -10,6 +10,9 @@
             margin: 0;
             padding: 0;
             background-color: #e6f2f7;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         header {
@@ -26,71 +29,25 @@
 
         /* Navbar Styling */
         .navbar {
-            overflow: hidden;
-            background-color: #006F8E;
-        }
-
-        .navbar a {
-            float: left;
-            display: block;
-            color: white;
             text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
+            background-color: #006F8E;
+            padding: 10px 0;
         }
 
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        .dropdown {
-            float: left;
-            overflow: hidden;
-        }
-
-        .dropdown .dropbtn {
-            font-size: 17px;
+        .navbar button {
+            background-color: #ffffff;
+            color: #006F8E;
             border: none;
-            outline: none;
-            color: white;
-            padding: 14px 16px;
+            padding: 14px 24px;
+            font-size: 17px;
+            cursor: pointer;
+            margin: 5px 15px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .navbar button:hover {
             background-color: #006F8E;
-            font-family: inherit;
-            margin: 0;
-        }
-
-        .navbar a:hover, .dropdown:hover .dropbtn {
-            background-color: #ddd;
-            color: black;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #006F8E;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            float: none;
             color: white;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
         }
 
         h1, h2 {
@@ -102,14 +59,13 @@
             background-color: #006F8E;
             color: #ffffff;
             padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            margin-top: auto; /* Ensures the footer sticks to the bottom of the page */
         }
 
         .main-content {
             padding: 40px 20px;
             text-align: center;
+            flex-grow: 1;
         }
 
         .about-section {
@@ -144,16 +100,9 @@
 <body>
     <!-- Navigation Bar -->
     <div class="navbar">
-        <a href="index.html">Home</a>
-        <div class="dropdown">
-            <button class="dropbtn">Pages</button>
-            <div class="dropdown-content">
-                <a href="index.html">Home</a>
-                <a href="fleet.html">Fleet</a>
-                <a href="contact.html">Contact Us</a>
-                <!-- Add more links here as you create additional pages -->
-            </div>
-        </div>
+        <button onclick="location.href='index.html'">Home</button>
+        <button onclick="location.href='fleet.html'">Fleet</button>
+        <button onclick="location.href='contact.html'">Contact Us</button>
     </div>
 
     <header>
@@ -168,14 +117,14 @@
 
         <div class="about-section">
             <img src="https://sea1.discourse-cdn.com/infiniteflight/user_avatar/community.infiniteflight.com/pilot_infiniteflight/288/1462536_2.png" alt="Pilot_InfiniteFlight" />
-            <h2>Message from our CEO: Pilot_InfiniteFlight</h2>
+            <h2>Message from our CEO: <a href="https://community.infiniteflight.com/u/pilot_infiniteflight/" target="_blank" style="color: #006F8E; text-decoration: none;">Pilot_InfiniteFlight</a></h2>
             <p class="about-text">Welcome to WestJet Virtual! We aim to provide a professional and immersive virtual airline experience for the Infinite Flight community. Our fleet includes a variety of aircraft, ensuring that every flight is as realistic and enjoyable as possible. Join us today and experience the thrill of flying with WestJet Virtual!</p>
-            <p class="about-text">Visit my profile: <a href="https://community.infiniteflight.com/u/pilot_infiniteflight/" target="_blank" style="color: #006F8E; text-decoration: none;">Pilot_InfiniteFlight's IFC Profile</a></p>
         </div>
     </div>
 
     <footer>
         <p>&copy; 2025 WestJet Virtual. All rights reserved.</p>
+        <p style="font-size: 0.9em;">WestJet Virtual is not affiliated or associated with WestJet Airlines in any way, shape, or form.</p>
     </footer>
 </body>
 </html>
