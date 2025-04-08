@@ -1,134 +1,145 @@
-/* General Reset and Box-Sizing */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* General Reset and Consistency */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
-}
-
-/* Header Styling */
+/* Header (Navbar) Styling */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fff; /* Header background color */
-  padding: 20px;
+    background-color: #2c3e50; /* Dark background color for the header */
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
 }
 
-nav a {
-  color: #000; /* Button text color */
-  text-decoration: none;
-  font-size: 18px;
-  padding: 10px 20px;
-  margin: 0 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav a:hover {
-  background-color: #007bff; /* Hover color */
-  color: #fff;
+header .logo img {
+    width: 150px; /* Logo size */
 }
 
-/* Logo Styling */
-.logo img {
-  width: 150px; /* Logo size */
-  height: auto;
+header .nav-links {
+    display: flex;
 }
 
-/* Main Content Area */
-.main-content {
-  padding: 40px 20px;
+header .nav-links .nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    transition: all 0.3s ease;
 }
 
-.page-title {
-  text-align: center;
-  font-size: 36px;
-  margin-bottom: 30px;
-  color: #333;
+header .nav-links .nav-link:hover {
+    color: #3498db; /* Highlight color on hover */
 }
 
-/* Staff Container Styling */
-.staff-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+/* Hero Section (Main Banner) */
+.hero {
+    background-image: url('https://www.westjet.com/content/dam/westjet/images/aircraft/exterior/787/210408-westjet-aircraft-896x504.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
 }
 
-.staff-card {
-  background-color: #fff; /* Card background color */
-  border-radius: 8px;
-  padding: 20px;
-  text-align: center;
-  width: 300px; /* Card width */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
-.staff-card img {
-  border-radius: 50%; /* Circular profile pictures */
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  margin-bottom: 15px;
+.hero-text p {
+    font-size: 24px;
 }
 
-.staff-card h2 {
-  font-size: 24px;
-  margin-top: 15px;
+/* About Us Section */
+.about-us {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ecf0f1;
 }
 
-.staff-card p {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.5;
-  margin-bottom: 15px;
+.about-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 18px;
+}
+
+/* Message from Our CEO Section */
+.message-ceo {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9fafb;
+}
+
+.message-ceo h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.message-ceo p {
+    font-size: 18px;
 }
 
 /* Footer Styling */
 footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #f8f9fa;
-  margin-top: 40px;
+    background-color: #2c3e50; /* Same as header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    width: 100%;
 }
 
-/* Button Group Styling */
-.nav-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+footer p {
+    margin: 10px 0;
 }
 
-.nav-buttons a {
-  font-size: 16px;
-  padding: 12px 24px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+footer a {
+    color: #3498db; /* Link color */
+    text-decoration: none;
 }
 
-.nav-buttons a:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+footer a:hover {
+    text-decoration: underline;
 }
 
-/* Mobile Responsiveness */
+/* Add responsiveness */
 @media (max-width: 768px) {
-  .staff-container {
-    flex-direction: column;
-    align-items: center;
-  }
+    header .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .staff-card {
-    width: 90%;
-    margin-bottom: 20px;
-  }
+    header .nav-links .nav-link {
+        margin: 10px 0;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 20px;
+    }
+
+    .about-us h2, .message-ceo h2 {
+        font-size: 28px;
+    }
+
+    .about-us p, .message-ceo p {
+        font-size: 16px;
+    }
 }
