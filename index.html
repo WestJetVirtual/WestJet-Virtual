@@ -21,7 +21,7 @@
       width: 100%;
       height: 100vh;
       object-fit: cover;
-      filter: brightness(50%);
+      filter: brightness(55%);
     }
 
     .header-content {
@@ -31,7 +31,7 @@
       transform: translate(-50%, -50%);
       color: white;
       text-align: center;
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     }
 
     .header-content h1 {
@@ -40,7 +40,7 @@
     }
 
     .header-content p {
-      font-size: 1.4em;
+      font-size: 1.3em;
       margin-top: 15px;
     }
 
@@ -64,75 +64,82 @@
       color: #aad4ff;
     }
 
+    .background-overlay {
+      background-image: url("https://www.westjet.com/content/dam/westjet/images/aircraft/exterior/787/210408-westjet-aircraft-896x504.jpg");
+      background-size: cover;
+      background-position: center;
+      opacity: 0.08;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
     .container {
       max-width: 1000px;
-      margin: 50px auto;
+      margin: 60px auto;
       padding: 0 20px;
+      position: relative;
     }
 
-    .about-us, .ceo-message {
-      margin-bottom: 60px;
-      text-align: center;
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin-bottom: 50px;
     }
 
-    .about-us h2, .ceo-message h3 {
+    .card h2, .card h3 {
       color: #004a76;
-      font-size: 2em;
       margin-bottom: 15px;
     }
 
-    .about-us p, .ceo-message p {
-      font-size: 1.1em;
-      color: #555;
+    .card p {
+      font-size: 1.05em;
+      color: #444;
       line-height: 1.6;
     }
 
     .ceo-profile {
       display: flex;
-      justify-content: center;
       align-items: center;
-      margin-top: 25px;
+      margin-top: 20px;
     }
 
     .ceo-profile img {
-      width: 120px;
-      height: 120px;
+      width: 110px;
+      height: 110px;
       border-radius: 50%;
       margin-right: 20px;
       border: 3px solid #004a76;
     }
 
     .ceo-profile p {
-      max-width: 600px;
-      text-align: left;
+      margin: 0;
+      max-width: 700px;
     }
 
     footer {
       background-color: #004a76;
       color: white;
       text-align: center;
-      padding: 20px 10px;
+      padding: 25px 10px;
       position: relative;
-    }
-
-    footer .footer-img {
-      margin-top: 15px;
-    }
-
-    footer img {
-      width: 200px;
-      border-radius: 8px;
-      margin-top: 10px;
+      bottom: 0;
+      width: 100%;
     }
 
     footer p {
-      margin: 5px 0;
+      margin: 6px 0;
       line-height: 1.6;
     }
 
     @media (max-width: 768px) {
       .header-content h1 {
-        font-size: 2em;
+        font-size: 2.3em;
       }
 
       .header-content p {
@@ -145,8 +152,8 @@
       }
 
       .ceo-profile img {
-        margin-right: 0;
         margin-bottom: 15px;
+        margin-right: 0;
       }
     }
   </style>
@@ -167,27 +174,26 @@
     <a href="staff.html">Staff</a>
   </nav>
 
+  <div class="background-overlay"></div>
+
   <div class="container">
-    <section class="about-us">
+    <div class="card">
       <h2>About Us</h2>
       <p>WestJet Virtual is a flight simulation community based on the real-world WestJet Airlines. Our goal is to provide a fun, engaging, and realistic flying experience for Infinite Flight pilots across the globe. Whether you're a seasoned veteran or just beginning your journey in virtual aviation, WestJet Virtual offers the tools, community, and support to help you take off.</p>
-    </section>
+    </div>
 
-    <section class="ceo-message">
+    <div class="card">
       <h3>Message from our CEO - <a href="https://community.infiniteflight.com/u/pilot_infiniteflight" target="_blank" style="color: #007BFF;">Pilot_InfiniteFlight</a></h3>
       <div class="ceo-profile">
         <img src="https://sea1.discourse-cdn.com/infiniteflight/user_avatar/community.infiniteflight.com/pilot_infiniteflight/288/1462536_2.png" alt="CEO">
         <p>Welcome to WestJet Virtual! We’re committed to providing a professional and exciting virtual airline experience for all our members. Whether you’re flying casually or helping behind the scenes, your contribution is valued. Thank you for being a part of our journey.</p>
       </div>
-    </section>
+    </div>
   </div>
 
   <footer>
     <p>&copy; WestJet Virtual 2025</p>
     <p>WestJet Virtual is not affiliated or associated with WestJet Airlines in any way, shape, or form.</p>
-    <div class="footer-img">
-      <img src="https://www.westjet.com/content/dam/westjet/images/aircraft/exterior/787/210408-westjet-aircraft-896x504.jpg" alt="WestJet 787">
-    </div>
   </footer>
 
 </body>
