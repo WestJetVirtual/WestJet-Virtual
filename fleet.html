@@ -2,132 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Fleet - WestJet Virtual</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WestJet Virtual - Fleet</title>
   <style>
     body, html {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: white;
-      background-color: #001F2D;
     }
 
-    header {
-      background: rgba(0, 0, 0, 0.6);
+    .header {
+      background: rgba(0, 51, 102, 0.8);
       padding: 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
 
-    .logo {
+    .header img {
       height: 50px;
     }
 
-    nav a {
-      text-decoration: none;
-      color: white;
-      margin: 0 15px;
-      font-weight: bold;
-      background-color: #007fa8;
-      padding: 10px 20px;
-      border-radius: 5px;
+    .nav-buttons {
+      display: flex;
+      gap: 15px;
     }
 
-    nav a:hover {
-      background-color: #005f7a;
+    .nav-buttons a {
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: #0077b6;
+      color: white;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .nav-buttons a:hover {
+      background-color: #005f8e;
     }
 
     .hero {
-      background-image: url('https://www.westjet.com/content/dam/westjet/images/aircraft/exterior/737-max-8/landscape-16-9/230502-WestJet-MAX8-Clouds-1600x900.jpg');
-      background-size: cover;
-      background-position: center;
-      padding: 80px 20px;
-      text-align: center;
-    }
-
-    .content {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    .plane {
-      background-color: rgba(0, 40, 60, 0.8);
-      border-radius: 8px;
-      margin-bottom: 30px;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .plane img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 5px;
-    }
-
-    footer {
-      background: url('https://www.westjet.com/content/dam/westjet/images/aircraft/exterior/787/210408-westjet-aircraft-896x504.jpg') no-repeat center center/cover;
-      color: white;
-      text-align: center;
-      padding: 50px 20px 20px 20px;
-    }
-
-    footer p {
-      margin: 5px 0;
-      background-color: rgba(0, 0, 0, 0.5);
-      display: inline-block;
-      padding: 10px;
-      border-radius: 8px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <img class="logo" src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg" alt="WestJet Virtual Logo">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="fleet.html">Fleet</a>
-      <a href="staff.html">Staff</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h1>Our Fleet</h1>
-  </section>
-
-  <div class="content">
-    <div class="plane">
-      <h2>Bombardier Dash 8-Q400</h2>
-      <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/0/0/c/00c4b738732ab9f0760e3ec458d27a73720534d9.png" alt="Q400">
-      <p>A regional aircraft perfect for short hauls and efficiency in tight airfields.</p>
-    </div>
-    <div class="plane">
-      <h2>Boeing 737-700</h2>
-      <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/5/c/a/5caffe65095591bb3226a3458b03ee3e044dca68.png" alt="737-700">
-      <p>Reliable and versatile, used across various North American routes.</p>
-    </div>
-    <div class="plane">
-      <h2>Boeing 737-800</h2>
-      <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/2/2/f/22fd44a4a0fff6d282c9446b36147ce594c1f055.png" alt="737-800">
-      <p>A popular choice for medium-haul flights, offering comfort and efficiency.</p>
-    </div>
-    <div class="plane">
-      <h2>Boeing 737 MAX 8</h2>
-      <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/3/6/a/36abf67e1028f8f8b5247094bbac6c9d222f5647.png" alt="737 MAX 8">
-      <p>The modern evolution of the 737 line, offering improved fuel efficiency and range.</p>
-    </div>
-    <div class="plane">
-      <h2>Boeing 787-9 Dreamliner</h2>
-      <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/9/4/8/948968c7592450d985780321559a665a77bcc6e7.png" alt="787-9">
-      <p>Our flagship long-haul aircraft used for international and premium services.</p>
-    </div>
-  </div>
-
-  <footer>
-    <p>&copy; WestJet Virtual 2025</p>
-    <p>WestJet Virtual is not affiliated with WestJet Airlines in any way, shape, or form.</p>
-  </footer>
-</body>
-</html>
+      background-image:
