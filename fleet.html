@@ -17,11 +17,25 @@
       min-height: 100vh;
       padding: 2rem;
     }
-    nav {
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    .nav-left, .nav-center, .nav-right {
+      flex: 1;
       display: flex;
       justify-content: center;
-      gap: 2rem;
-      margin-bottom: 2rem;
+    }
+    .nav-left {
+      justify-content: flex-start;
+    }
+    .nav-center {
+      justify-content: center;
+    }
+    .nav-right {
+      justify-content: flex-end;
     }
     nav a {
       text-decoration: none;
@@ -29,6 +43,7 @@
       background: #007fa8;
       padding: 0.5rem 1rem;
       border-radius: 5px;
+      margin: 0 0.5rem;
       transition: background 0.3s ease;
     }
     nav a:hover {
@@ -66,11 +81,17 @@
 </head>
 <body>
   <div class="overlay">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="staff.html">Staff</a>
-      <a href="fleet.html">Fleet</a>
-    </nav>
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="index.html">Home</a>
+      </div>
+      <div class="nav-center">
+        <a href="fleet.html">Fleet</a>
+      </div>
+      <div class="nav-right">
+        <a href="staff.html">Staff</a>
+      </div>
+    </div>
 
     <h1>Our Fleet</h1>
     <div class="fleet-container">
