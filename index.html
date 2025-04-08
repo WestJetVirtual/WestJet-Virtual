@@ -5,16 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>WestJet Virtual</title>
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f9f9f9;
       color: #333;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     header {
       position: relative;
+      width: 100%;
     }
 
     header img {
@@ -30,12 +38,12 @@
       left: 50%;
       transform: translate(-50%, -50%);
       color: white;
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+      text-align: center;
+      padding: 0 20px;
     }
 
     .header-content h1 {
       font-size: 3.5em;
-      margin: 0;
     }
 
     .header-content p {
@@ -45,15 +53,16 @@
 
     nav {
       background-color: #004a76;
+      text-align: center;
       padding: 15px 0;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 25px;
-      font-size: 1em;
+      margin: 0 20px;
       font-weight: bold;
+      font-size: 1em;
       text-transform: uppercase;
       transition: color 0.3s ease;
     }
@@ -76,9 +85,11 @@
     }
 
     .container {
-      max-width: 1000px;
-      margin: 60px auto;
-      padding: 0 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
       position: relative;
     }
 
@@ -86,8 +97,11 @@
       background-color: white;
       border-radius: 10px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      max-width: 900px;
+      width: 100%;
       padding: 30px;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
+      text-align: center;
     }
 
     .card h2 {
@@ -113,16 +127,15 @@
       width: 110px;
       height: 110px;
       border-radius: 50%;
-      margin-bottom: 15px;
       border: 3px solid #004a76;
+      margin-bottom: 15px;
     }
 
     footer {
       background-color: #004a76;
       color: white;
+      text-align: center;
       padding: 25px 10px;
-      width: 100%;
-      margin-top: 50px;
     }
 
     footer p {
@@ -132,11 +145,16 @@
 
     @media (max-width: 768px) {
       .header-content h1 {
-        font-size: 2.3em;
+        font-size: 2.2em;
       }
 
       .header-content p {
         font-size: 1em;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 8px 15px;
       }
     }
   </style>
