@@ -1,11 +1,3 @@
-/* General body styles */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
-
 /* Header (Navbar) styles */
 header {
     background-color: #005c67; /* WestJet primary color */
@@ -13,10 +5,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
     width: 100%;
-    top: 0;
-    z-index: 1000;
     height: 60px; /* Reduced height for header */
 }
 
@@ -25,9 +14,9 @@ header .logo img {
 }
 
 header .nav-links {
-    display: flex;
-    justify-content: flex-start; /* Align buttons to the left */
-    gap: 15px; /* Gap between buttons */
+    display: row;
+    justify-content: flex-start; /* Align buttons in a row */
+    gap: 15px; /* Spacing between buttons */
 }
 
 header .nav-links a {
@@ -44,110 +33,10 @@ header .nav-links a:hover {
     background-color: #f5a623;
 }
 
-/* Hero section */
-.hero {
-    background: url('https://www.westjet.com/content/dam/westjet/images/aircraft/exterior/787/210408-westjet-aircraft-896x504.jpg') no-repeat center center/cover;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    position: relative;
-}
-
-.hero-text h1 {
-    font-size: 48px;
-    margin: 0;
-}
-
-.hero-text p {
-    font-size: 24px;
-    margin-top: 10px;
-}
-
-/* About Us Section */
-.about-us {
-    padding: 50px 20px;
-    background-color: #ffffff;
-    text-align: center;
-}
-
-.about-us h2 {
-    font-size: 36px;
-    color: #005c67;
-}
-
-.about-us p {
-    font-size: 18px;
-    color: #333;
-    max-width: 800px;
-    margin: 20px auto;
-}
-
-/* Message from CEO Section */
-.message-ceo {
-    padding: 50px 20px;
-    background-color: #f0f0f0;
-    text-align: center;
-}
-
-.message-ceo h2 {
-    font-size: 36px;
-    color: #005c67;
-}
-
-.ceo-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.ceo-info img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-right: 20px;
-}
-
-.ceo-message h3 {
-    font-size: 24px;
-    color: #005c67;
-}
-
-.ceo-message p {
-    font-size: 16px;
-    color: #333;
-}
-
-/* Footer styles */
-footer {
-    background-color: #005c67;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-    margin-top: 40px;
-}
-
-/* Ensure footer stays at the bottom */
-footer p {
-    margin: 0;
-}
-
-/* Responsive Design */
+/* Mobile responsiveness */
 @media (max-width: 768px) {
     header .nav-links {
-        flex-direction: column;
+        flex-direction: row; /* Ensures horizontal layout on mobile */
         align-items: center;
-    }
-
-    .hero-text h1 {
-        font-size: 36px;
-    }
-
-    .hero-text p {
-        font-size: 18px;
     }
 }
