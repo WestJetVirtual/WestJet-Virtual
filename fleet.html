@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WestJet Virtual Fleet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6f2f7;
+        }
+
+        header {
+            background-color: #006F8E;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header .logo {
+            width: 180px;
+            max-width: 100%;
+        }
+
+        h1, h2 {
+            color: #006F8E;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #006F8E;
+            color: #ffffff;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .main-content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .fleet-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .fleet-item {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 280px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .fleet-item:hover {
+            transform: scale(1.05);
+        }
+
+        .fleet-img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .fleet-title {
+            font-size: 1.5em;
+            color: #006F8E;
+            margin-top: 15px;
+        }
+
+        .fleet-description {
+            font-size: 1.1em;
+            color: #555;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/WestJet_logo_2021.svg" alt="WestJet Virtual Logo" class="logo">
+    </header>
+
+    <div class="main-content">
+        <h1>Our Fleet</h1>
+        <div class="fleet-section">
+
+            <!-- Q400 -->
+            <div class="fleet-item">
+                <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/0/0/c/00c4b738732ab9f0760e3ec458d27a73720534d9.png" alt="Q400" class="fleet-img">
+                <h2 class="fleet-title">Q400</h2>
+                <p class="fleet-description">The Bombardier Q400 is a turboprop aircraft known for its speed and fuel efficiency. It's ideal for short regional routes, combining comfort and performance for our virtual pilots.</p>
+            </div>
+
+            <!-- B737-700 -->
+            <div class="fleet-item">
+                <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/5/c/a/5caffe65095591bb3226a3458b03ee3e044dca68.png" alt="B737-700" class="fleet-img">
+                <h2 class="fleet-title">B737-700</h2>
+                <p class="fleet-description">The Boeing 737-700 is a versatile narrow-body aircraft that offers a great balance of range and capacity. Perfect for medium-haul routes, it's a favorite for virtual pilots seeking efficiency.</p>
+            </div>
+
+            <!-- B737-800 -->
+            <div class="fleet-item">
+                <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/2/2/f/22fd44a4a0fff6d282c9446b36147ce594c1f055.png" alt="B737-800" class="fleet-img">
+                <h2 class="fleet-title">B737-800</h2>
+                <p class="fleet-description">The Boeing 737-800 is one of the most popular airliners in the world, offering both performance and comfort. With a larger capacity than the 737-700, it's perfect for medium to long-haul routes.</p>
+            </div>
+
+            <!-- B737-8MAX -->
+            <div class="fleet-item">
+                <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/3/6/a/36abf67e1028f8f8b5247094bbac6c9d222f5647.png" alt="B737-8MAX" class="fleet-img">
+                <h2 class="fleet-title">B737-8MAX</h2>
+                <p class="fleet-description">The Boeing 737 MAX 8 is a more fuel-efficient version of the 737, offering longer range and enhanced performance. Ideal for longer flights, it's the modern choice for WestJet Virtual pilots.</p>
+            </div>
+
+            <!-- B787-9 -->
+            <div class="fleet-item">
+                <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/9/4/8/948968c7592450d985780321559a665a77bcc6e7.png" alt="B787-9" class="fleet-img">
+                <h2 class="fleet-title">B787-9</h2>
+                <p class="fleet-description">The Boeing 787-9 is a wide-body, long-haul aircraft known for its advanced technology, fuel efficiency, and passenger comfort. This aircraft is perfect for virtual international routes, providing a smooth and modern flying experience.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 WestJet Virtual. All rights reserved.</p>
+    </footer>
+</body>
+</html>
