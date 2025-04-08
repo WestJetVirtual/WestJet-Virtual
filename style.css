@@ -7,6 +7,9 @@ header {
     align-items: center;
     width: 100%;
     height: 60px; /* Reduced height for header */
+    position: sticky; /* Keeps the header at the top of the page */
+    top: 0; /* Makes sure it's always at the top */
+    z-index: 1000; /* Ensures the header is above other content */
 }
 
 header .logo img {
@@ -14,8 +17,9 @@ header .logo img {
 }
 
 header .nav-links {
-    display: row;
-    justify-content: flex-start; /* Align buttons in a row */
+    display: flex; /* Ensures the buttons are in a row */
+    justify-content: flex-start;
+    align-items: center; /* Aligns buttons vertically */
     gap: 15px; /* Spacing between buttons */
 }
 
