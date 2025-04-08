@@ -5,8 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WestJet Virtual - Fleet</title>
     <style>
-        /* Same styles as home.html for consistency */
-        /* Add the styles as above */
+        /* Global styles matching the home page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #0071b1;
+            color: white;
+        }
+
+        header img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+
+        h1, h2 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        nav {
+            background-color: #005a8f;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .fleet-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .fleet-item {
+            text-align: center;
+            margin: 20px;
+            width: 250px;
+        }
+
+        .fleet-item img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #005a8f;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
     </style>
 </head>
 <body>
@@ -16,39 +92,47 @@
     <h1>WestJet Virtual - Fleet</h1>
 </header>
 
-<nav class="nav-bar">
+<nav>
     <a href="index.html">Home</a>
     <a href="fleet.html">Fleet</a>
-    <a href="roles.html">Staff</a>
+    <a href="staff.html">Staff</a>
     <a href="contact.html">Contact</a>
 </nav>
 
 <div class="container">
     <h2>Our Fleet</h2>
-    <div class="fleet-item">
-        <h3>Q400</h3>
-        <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/0/0/c/00c4b738732ab9f0760e3ec458d27a73720534d9.png" alt="Q400">
-        <p>The Bombardier Q400 is a versatile regional aircraft used for short regional flights. It combines comfort and speed for efficient travel.</p>
-    </div>
-    <div class="fleet-item">
-        <h3>B737-700</h3>
-        <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/5/c/a/5caffe65095591bb3226a3458b03ee3e044dca68.png" alt="B737-700">
-        <p>The Boeing 737-700 is part of our narrow-body fleet, offering a perfect balance of efficiency and comfort for short-to-medium-haul routes.</p>
-    </div>
-    <div class="fleet-item">
-        <h3>B737-800</h3>
-        <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/2/2/f/22fd44a4a0fff6d282c9446b36147ce594c1f055.png" alt="B737-800">
-        <p>The Boeing 737-800 is one of the most widely used aircraft worldwide, offering both comfort and fuel efficiency on various routes.</p>
-    </div>
-    <div class="fleet-item">
-        <h3>B737-8MAX</h3>
-        <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/3/6/a/36abf67e1028f8f8b5247094bbac6c9d222f5647.png" alt="B737-8MAX">
-        <p>The 737 MAX is the latest addition to our fleet, designed to deliver enhanced fuel efficiency and cutting-edge technology.</p>
-    </div>
-    <div class="fleet-item">
-        <h3>B787-9</h3>
-        <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/9/4/8/948968c7592450d985780321559a665a77bcc6e7.png" alt="B787-9">
-        <p>The Boeing 787-9 Dreamliner is a long-haul aircraft, perfect for transatlantic flights, offering comfort and efficiency for longer journeys.</p>
+    <p>At WestJet Virtual, we pride ourselves on our diverse fleet. Our aircraft range from the sleek Q400 to the long-haul B787-9, ensuring that we are ready for any route and destination. Here's a look at our fleet:</p>
+
+    <div class="fleet-section">
+        <div class="fleet-item">
+            <h3>Q400</h3>
+            <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/0/0/c/00c4b738732ab9f0760e3ec458d27a73720534d9.png" alt="Q400">
+            <p>The Bombardier Q400 is a versatile regional aircraft, perfect for short-haul routes with high efficiency.</p>
+        </div>
+        
+        <div class="fleet-item">
+            <h3>B737-700</h3>
+            <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/5/c/a/5caffe65095591bb3226a3458b03ee3e044dca68.png" alt="B737-700">
+            <p>The Boeing 737-700 is a reliable workhorse, offering both comfort and fuel efficiency on mid-range routes.</p>
+        </div>
+
+        <div class="fleet-item">
+            <h3>B737-800</h3>
+            <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/2/2/f/22fd44a4a0fff6d282c9446b36147ce594c1f055.png" alt="B737-800">
+            <p>The Boeing 737-800 is a popular choice for airlines worldwide, offering excellent range and passenger comfort.</p>
+        </div>
+
+        <div class="fleet-item">
+            <h3>B737-8MAX</h3>
+            <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/3/6/a/36abf67e1028f8f8b5247094bbac6c9d222f5647.png" alt="B737-8MAX">
+            <p>The Boeing 737 MAX 8 brings next-generation efficiency and performance to our fleet, perfect for short to medium-haul routes.</p>
+        </div>
+
+        <div class="fleet-item">
+            <h3>B787-9</h3>
+            <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/9/4/8/948968c7592450d985780321559a665a77bcc6e7.png" alt="B787-9">
+            <p>The Boeing 787-9 Dreamliner is designed for long-haul flights, offering the ultimate in comfort and efficiency.</p>
+        </div>
     </div>
 </div>
 
