@@ -43,4 +43,122 @@
     }
 
     .hero {
-      background-image:
+      background-color: #004e7c; /* solid background color */
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .section {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .fleet-item {
+      display: flex;
+      align-items: center;
+      margin: 15px 0;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    .fleet-item img {
+      width: 80px;
+      height: 80px;
+      margin-right: 20px;
+    }
+
+    .footer {
+      text-align: center;
+      color: white;
+      font-size: 14px;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    @media (max-width: 600px) {
+      .fleet-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .fleet-item img {
+        margin-bottom: 10px;
+      }
+
+      .nav-buttons {
+        flex-direction: column;
+        align-items: flex-end;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg?ex=67f5a5eb&is=67f4546b&hm=40b4fedcf91413261f8e3084c5ce01d3730fd97d3837abe7a2cc0b7cae41a413&" alt="WestJet Virtual Logo">
+    <div class="nav-buttons">
+      <a href="index.html">Home</a>
+      <a href="fleet.html">Fleet</a>
+      <a href="staff.html">Staff</a>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="section">
+      <h2>Our Fleet</h2>
+
+      <div class="fleet-item">
+        <img src="https://www.westjet.com/images/our-fleet/boeing-737.jpg" alt="Boeing 737">
+        <div>
+          <strong>Boeing 737-800</strong><br>
+          A reliable and efficient short- to medium-range aircraft ideal for a variety of routes.
+        </div>
+      </div>
+
+      <div class="fleet-item">
+        <img src="https://www.westjet.com/images/our-fleet/boeing-787.jpg" alt="Boeing 787">
+        <div>
+          <strong>Boeing 787-9 Dreamliner</strong><br>
+          A long-haul aircraft that offers maximum comfort and fuel efficiency, ideal for international flights.
+        </div>
+      </div>
+
+      <div class="fleet-item">
+        <img src="https://www.westjet.com/images/our-fleet/airbus-a320.jpg" alt="Airbus A320">
+        <div>
+          <strong>Airbus A320</strong><br>
+          A versatile narrow-body aircraft used for both short- and medium-haul routes across North America.
+        </div>
+      </div>
+
+      <div class="fleet-item">
+        <img src="https://www.westjet.com/images/our-fleet/airbus-a330.jpg" alt="Airbus A330">
+        <div>
+          <strong>Airbus A330-200</strong><br>
+          A wide-body aircraft that offers premium comfort on longer international flights.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 WestJet Virtual. All rights reserved.</p>
+  </div>
+
+</body>
+</html>
