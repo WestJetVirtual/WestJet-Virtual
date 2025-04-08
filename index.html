@@ -7,7 +7,7 @@
     <style>
         /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
@@ -35,7 +35,7 @@
         }
 
         header h1 {
-            font-size: 4em;
+            font-size: 3.5em;
             margin: 0;
             font-weight: bold;
         }
@@ -70,6 +70,7 @@
             margin-top: -20px;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 60px; /* Prevent content from overlapping footer */
         }
 
         .about-us {
@@ -90,10 +91,11 @@
 
         .ceo-message {
             text-align: center;
+            margin-bottom: 50px;
         }
 
         .ceo-message h3 {
-            font-size: 2em;
+            font-size: 2.5em;
             color: #005a8f;
             margin-bottom: 10px;
         }
@@ -101,6 +103,27 @@
         .ceo-message p {
             font-size: 1.2em;
             color: #333;
+        }
+
+        .ceo-profile {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ceo-profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+        }
+
+        .ceo-profile a {
+            font-size: 1.2em;
+            color: #005a8f;
+            text-decoration: none;
+            font-weight: bold;
         }
 
         footer {
@@ -139,7 +162,6 @@
                 font-size: 1em;
             }
         }
-
     </style>
 </head>
 <body>
@@ -156,7 +178,6 @@
     <a href="index.html">Home</a>
     <a href="fleet.html">Fleet</a>
     <a href="staff.html">Staff</a>
-    <a href="contact.html">Contact</a>
 </nav>
 
 <div class="container">
@@ -166,8 +187,11 @@
     </div>
 
     <div class="ceo-message">
-        <h3><a href="https://community.infiniteflight.com/u/pilot_infiniteflight" target="_blank">Pilot_InfiniteFlight</a> - CEO</h3>
-        <p>Welcome to WestJet Virtual! We’re committed to providing a professional and exciting virtual airline experience for all our members. Whether you’re a seasoned virtual pilot or new to the world of flight simulation, we’re thrilled to have you on board.</p>
+        <h3>Message from our CEO - <a href="https://community.infiniteflight.com/u/pilot_infiniteflight" target="_blank">Pilot_InfiniteFlight</a></h3>
+        <div class="ceo-profile">
+            <img src="https://sea1.discourse-cdn.com/infiniteflight/user_avatar/community.infiniteflight.com/pilot_infiniteflight/288/1462536_2.png" alt="Pilot_InfiniteFlight">
+            <p>Welcome to WestJet Virtual! We’re committed to providing a professional and exciting virtual airline experience for all our members. Whether you’re a seasoned virtual pilot or new to the world of flight simulation, we’re thrilled to have you on board.</p>
+        </div>
     </div>
 </div>
 
