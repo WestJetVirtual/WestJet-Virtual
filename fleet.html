@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WestJet Virtual - Fleet</title>
     <style>
-        /* Global styles matching the home page */
+        /* Global Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -16,7 +16,7 @@
         header {
             text-align: center;
             padding: 20px;
-            background-color: #0071b1;
+            background-color: #005a8f;
             color: white;
         }
 
@@ -31,7 +31,7 @@
         }
 
         nav {
-            background-color: #005a8f;
+            background-color: #004a76;
             padding: 10px;
             text-align: center;
         }
@@ -55,32 +55,29 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .fleet-section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-
-        .fleet-item {
-            text-align: center;
-            margin: 20px;
-            width: 250px;
-        }
-
-        .fleet-item img {
-            width: 100%;
-            max-width: 300px;
-            border-radius: 10px;
-        }
-
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #005a8f;
+            background-color: #004a76;
             color: white;
             position: fixed;
             width: 100%;
             bottom: 0;
+        }
+
+        .fleet-item {
+            margin-bottom: 30px;
+        }
+
+        .fleet-item img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .fleet-item h3 {
+            color: #005a8f;
         }
 
     </style>
@@ -89,7 +86,7 @@
 
 <header>
     <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg?ex=67f5a5eb&is=67f4546b&hm=40b4fedcf91413261f8e3084c5ce01d3730fd97d3837abe7a2cc0b7cae41a413&" alt="WestJet Virtual Logo">
-    <h1>WestJet Virtual - Fleet</h1>
+    <h1>WestJet Virtual Fleet</h1>
 </header>
 
 <nav>
@@ -100,44 +97,39 @@
 </nav>
 
 <div class="container">
-    <h2>Our Fleet</h2>
-    <p>At WestJet Virtual, we pride ourselves on our diverse fleet. Our aircraft range from the sleek Q400 to the long-haul B787-9, ensuring that we are ready for any route and destination. Here's a look at our fleet:</p>
+    <div class="fleet-item">
+        <h3>Q400</h3>
+        <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/0/0/c/00c4b738732ab9f0760e3ec458d27a73720534d9.png" alt="Q400">
+        <p>The Bombardier Q400 is a regional turboprop aircraft used for short-haul flights, perfect for flying to smaller airports while maintaining high efficiency and speed.</p>
+    </div>
 
-    <div class="fleet-section">
-        <div class="fleet-item">
-            <h3>Q400</h3>
-            <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/0/0/c/00c4b738732ab9f0760e3ec458d27a73720534d9.png" alt="Q400">
-            <p>The Bombardier Q400 is a versatile regional aircraft, perfect for short-haul routes with high efficiency.</p>
-        </div>
-        
-        <div class="fleet-item">
-            <h3>B737-700</h3>
-            <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/5/c/a/5caffe65095591bb3226a3458b03ee3e044dca68.png" alt="B737-700">
-            <p>The Boeing 737-700 is a reliable workhorse, offering both comfort and fuel efficiency on mid-range routes.</p>
-        </div>
+    <div class="fleet-item">
+        <h3>B737-700</h3>
+        <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/5/c/a/5caffe65095591bb3226a3458b03ee3e044dca68.png" alt="B737-700">
+        <p>The Boeing 737-700 is a popular single-aisle airliner that offers a great balance of performance and capacity, ideal for medium to short-haul flights.</p>
+    </div>
 
-        <div class="fleet-item">
-            <h3>B737-800</h3>
-            <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/2/2/f/22fd44a4a0fff6d282c9446b36147ce594c1f055.png" alt="B737-800">
-            <p>The Boeing 737-800 is a popular choice for airlines worldwide, offering excellent range and passenger comfort.</p>
-        </div>
+    <div class="fleet-item">
+        <h3>B737-800</h3>
+        <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/2/2/f/22fd44a4a0fff6d282c9446b36147ce594c1f055.png" alt="B737-800">
+        <p>The Boeing 737-800 is an advanced version of the 737 series, offering increased efficiency and range for medium-haul flights, commonly used in many major airlines.</p>
+    </div>
 
-        <div class="fleet-item">
-            <h3>B737-8MAX</h3>
-            <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/3/6/a/36abf67e1028f8f8b5247094bbac6c9d222f5647.png" alt="B737-8MAX">
-            <p>The Boeing 737 MAX 8 brings next-generation efficiency and performance to our fleet, perfect for short to medium-haul routes.</p>
-        </div>
+    <div class="fleet-item">
+        <h3>B737-8MAX</h3>
+        <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/3/6/a/36abf67e1028f8f8b5247094bbac6c9d222f5647.png" alt="B737-8MAX">
+        <p>The Boeing 737 MAX 8 brings advanced aerodynamics, larger engines, and new winglets, allowing it to fly more efficiently while maintaining the same seating capacity.</p>
+    </div>
 
-        <div class="fleet-item">
-            <h3>B787-9</h3>
-            <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/9/4/8/948968c7592450d985780321559a665a77bcc6e7.png" alt="B787-9">
-            <p>The Boeing 787-9 Dreamliner is designed for long-haul flights, offering the ultimate in comfort and efficiency.</p>
-        </div>
+    <div class="fleet-item">
+        <h3>B787-9</h3>
+        <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/9/4/8/948968c7592450d985780321559a665a77bcc6e7.png" alt="B787-9">
+        <p>The Boeing 787-9 Dreamliner is a long-range, wide-body aircraft that offers a smooth and comfortable flight experience on intercontinental flights, with impressive fuel efficiency.</p>
     </div>
 </div>
 
 <footer>
-    <p>WestJet Virtual is not affiliated or associated with WestJet Airlines in any way, shape, or form.</p>
+    <p>&copy; WestJet Virtual 2025. WestJet Virtual is not affiliated or associated with WestJet Airlines in any way, shape, or form.</p>
 </footer>
 
 </body>
