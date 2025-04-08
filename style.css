@@ -1,98 +1,96 @@
-/* General Reset and Consistency */
-body, html {
+/* General body styles */
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    box-sizing: border-box;
+    background-color: #f4f4f4;
 }
 
-/* Header (Navbar) Styling */
+/* Header (Navbar) styles */
 header {
-    background-color: #2c3e50; /* Dark background color for the header */
+    background-color: #005c67; /* WestJet primary color */
     padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-}
-
-header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 header .logo img {
-    width: 100px; /* Smaller logo size */
+    height: 50px;
 }
 
 header .nav-links {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 50%;
-    gap: 20px;
 }
 
-header .nav-links .nav-link {
-    color: white;
+header .nav-links a {
+    color: #fff;
     text-decoration: none;
-    font-size: 18px;
-    transition: all 0.3s ease;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
-header .nav-links .nav-link:hover {
-    color: #3498db; /* Highlight color on hover */
+header .nav-links a:hover {
+    color: #f5a623;
 }
 
-/* Hero Section (Main Banner) */
+/* Hero section */
 .hero {
-    background-image: url('https://www.westjet.com/content/dam/westjet/images/aircraft/exterior/787/210408-westjet-aircraft-896x504.jpg');
-    background-size: cover;
-    background-position: center;
+    background: url('https://www.westjet.com/content/dam/westjet/images/aircraft/exterior/787/210408-westjet-aircraft-896x504.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
-    padding: 60px 20px;
     text-align: center;
+    position: relative;
 }
 
 .hero-text h1 {
-    font-size: 40px;
-    margin-bottom: 20px;
+    font-size: 48px;
+    margin: 0;
 }
 
 .hero-text p {
-    font-size: 22px;
+    font-size: 24px;
+    margin-top: 10px;
 }
 
 /* About Us Section */
 .about-us {
-    padding: 60px 20px;
+    padding: 50px 20px;
+    background-color: #ffffff;
     text-align: center;
-    background-color: #ecf0f1;
 }
 
 .about-us h2 {
     font-size: 36px;
-    margin-bottom: 20px;
+    color: #005c67;
 }
 
 .about-us p {
     font-size: 18px;
+    color: #333;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
-/* Message from Our CEO Section */
+/* Message from CEO Section */
 .message-ceo {
-    padding: 60px 20px;
+    padding: 50px 20px;
+    background-color: #f0f0f0;
     text-align: center;
-    background-color: #f9fafb;
 }
 
 .message-ceo h2 {
     font-size: 36px;
-    margin-bottom: 20px;
+    color: #005c67;
 }
 
 .ceo-info {
@@ -100,57 +98,44 @@ header .nav-links .nav-link:hover {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    text-align: left;
 }
 
 .ceo-info img {
+    border-radius: 50%;
     width: 150px;
     height: 150px;
-    border-radius: 50%;
     margin-right: 20px;
 }
 
 .ceo-message h3 {
     font-size: 24px;
+    color: #005c67;
 }
 
 .ceo-message p {
-    font-size: 18px;
+    font-size: 16px;
+    color: #333;
 }
 
-/* Footer Styling */
+/* Footer styles */
 footer {
-    background-color: #2c3e50; /* Same as header */
+    background-color: #005c67;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 20px 0;
     position: relative;
-    width: 100%;
+    margin-top: 40px;
 }
 
+/* Ensure footer stays at the bottom */
 footer p {
-    margin: 10px 0;
+    margin: 0;
 }
 
-footer a {
-    color: #3498db; /* Link color */
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Add responsiveness */
+/* Responsive Design */
 @media (max-width: 768px) {
     header .nav-links {
         flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    header .nav-links .nav-link {
-        margin: 10px 0;
     }
 
     .hero-text h1 {
@@ -158,19 +143,6 @@ footer a:hover {
     }
 
     .hero-text p {
-        font-size: 20px;
-    }
-
-    .about-us h2, .message-ceo h2 {
-        font-size: 28px;
-    }
-
-    .about-us p, .message-ceo p {
-        font-size: 16px;
-    }
-
-    /* Footer content for small screens */
-    footer {
-        padding: 15px;
+        font-size: 18px;
     }
 }
