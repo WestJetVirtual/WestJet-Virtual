@@ -2,192 +2,139 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>WestJet Virtual | Staff</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Staff - WestJet Virtual</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
+      margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4faff;
-      display: flex;
-      flex-direction: column;
+      background: url('https://www.westjet.com/content/dam/westjet/images/aircraft/exterior/737-max-8/landscape-16-9/230502-WestJet-MAX8-Clouds-1600x900.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    .overlay {
+      background-color: rgba(0, 42, 71, 0.8);
       min-height: 100vh;
+      padding: 2rem;
     }
-
-    header {
-      background-color: #003e6b;
-      padding: 1rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-
-    header img {
-      height: 50px;
-    }
-
     nav {
       display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
     }
-
     nav a {
-      color: white;
       text-decoration: none;
-      background-color: #007fa3;
+      color: white;
+      background: #007fa8;
       padding: 0.5rem 1rem;
       border-radius: 5px;
-      transition: background-color 0.3s;
+      transition: background 0.3s ease;
     }
-
     nav a:hover {
-      background-color: #005f7a;
+      background: #005f80;
     }
-
-    .container {
-      flex: 1;
-      padding: 2rem 1rem;
-      max-width: 1000px;
-      margin: 0 auto;
+    h1 {
+      text-align: center;
+      margin-top: 1rem;
     }
-
-    .section {
-      background-color: white;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.08);
-      margin-bottom: 2rem;
-      padding: 1.5rem;
+    .staff-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .staff-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 1rem;
       text-align: center;
     }
-
-    .section img {
-      width: 100px;
-      height: 100px;
+    .staff-card img {
+      width: 80px;
+      height: 80px;
       border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 1rem;
     }
-
-    .section h2 {
-      color: #003e6b;
-      margin-bottom: 0.3rem;
-    }
-
-    .section p {
-      color: #333;
-      font-size: 0.95rem;
-    }
-
     footer {
-      background-color: #003e6b;
+      background-color: rgba(0, 0, 0, 0.8);
       color: white;
       text-align: center;
       padding: 1rem;
-      font-size: 0.85rem;
-      margin-top: auto;
-    }
-
-    footer p {
-      margin: 0.3rem 0;
-    }
-
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      nav {
-        width: 100%;
-        justify-content: center;
-        margin-top: 1rem;
-      }
+      margin-top: 3rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg" alt="WestJet Virtual Logo">
+  <div class="overlay">
     <nav>
       <a href="index.html">Home</a>
+      <a href="staff.html">Staff</a>
       <a href="fleet.html">Fleet</a>
     </nav>
-  </header>
 
-  <div class="container">
-    <div class="section">
-      <img src="https://sea1.discourse-cdn.com/infiniteflight/user_avatar/community.infiniteflight.com/pilot_infiniteflight/288/1462536_2.png" alt="Pilot_InfiniteFlight">
-      <h2>CEO - <a href="https://community.infiniteflight.com/u/pilot_infiniteflight/" target="_blank" style="color:#007fa3; text-decoration:none;">Pilot_InfiniteFlight</a></h2>
-      <p>Chief Executive Officer</p>
+    <h1>Our Leadership Team</h1>
+    <div class="staff-section">
+      <div class="staff-card">
+        <img src="https://sea1.discourse-cdn.com/infiniteflight/user_avatar/community.infiniteflight.com/pilot_infiniteflight/288/1462536_2.png" alt="CEO">
+        <h3>CEO - <a href="https://community.infiniteflight.com/u/pilot_infiniteflight/" target="_blank" style="color: white; text-decoration: underline;">Pilot_InfiniteFlight</a></h3>
+        <p>Chief Executive Officer of WestJet Virtual. Oversees all operations and guides the future of our VA.</p>
+      </div>
+      <div class="staff-card">
+        <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg" alt="Vacant">
+        <h3>COO - Vacant</h3>
+        <p>Chief Operating Officer. Assists the CEO and supervises daily operations of the VA.</p>
+      </div>
+      <div class="staff-card">
+        <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg" alt="Vacant">
+        <h3>CTO - Vacant</h3>
+        <p>Chief Technology Officer. Manages web development and digital tools used by WestJet Virtual.</p>
+      </div>
     </div>
 
-    <div class="section">
-      <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg" alt="Vacant">
-      <h2>COO - Vacant</h2>
-      <p>Chief Operating Officer</p>
+    <h1>Our Staff Team</h1>
+    <div class="staff-section">
+      <div class="staff-card">
+        <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg" alt="Vacant">
+        <h3>Recruiter - Vacant</h3>
+        <p>Welcomes new members and helps guide them into our VA community.</p>
+      </div>
+      <div class="staff-card">
+        <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg" alt="Vacant">
+        <h3>Route Manager - Vacant</h3>
+        <p>Maintains route database and helps design realistic WestJet routes for Infinite Flight.</p>
+      </div>
+      <div class="staff-card">
+        <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg" alt="Vacant">
+        <h3>Event Manager - Vacant</h3>
+        <p>Organizes official VA events and collaborates with IFATC and other VAs.</p>
+      </div>
+      <div class="staff-card">
+        <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg" alt="Vacant">
+        <h3>HR Manager - Vacant</h3>
+        <p>Handles internal member concerns, enforces guidelines, and supports staff relations.</p>
+      </div>
+      <div class="staff-card">
+        <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg" alt="Vacant">
+        <h3>PR Manager - Vacant</h3>
+        <p>Handles internal and external communications and assists with promotions and engagement.</p>
+      </div>
+      <div class="staff-card">
+        <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg" alt="Vacant">
+        <h3>External Relations - Vacant</h3>
+        <p>Manages codeshare and partner VA relationships for collaborations.</p>
+      </div>
+      <div class="staff-card">
+        <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg" alt="Vacant">
+        <h3>Staff Overseer - Vacant</h3>
+        <p>Monitors all non-chief staff roles to ensure smooth team operations and reporting.</p>
+      </div>
     </div>
 
-    <div class="section">
-      <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg" alt="Vacant">
-      <h2>CTO - Vacant</h2>
-      <p>Chief Technology Officer</p>
-    </div>
-
-    <h2 style="text-align: center; margin: 2rem 0; color:#003e6b;">Our Staff Members</h2>
-
-    <div class="section">
-      <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg" alt="Vacant">
-      <h2>Recruiter - Vacant</h2>
-      <p>Manages applications and brings in new members to WestJet Virtual.</p>
-    </div>
-
-    <div class="section">
-      <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg" alt="Vacant">
-      <h2>Route Manager - Vacant</h2>
-      <p>Oversees and maintains the WestJet Virtual route network and updates.</p>
-    </div>
-
-    <div class="section">
-      <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg" alt="Vacant">
-      <h2>Event Manager - Vacant</h2>
-      <p>Creates and manages official events and fly-outs for community engagement.</p>
-    </div>
-
-    <div class="section">
-      <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg" alt="Vacant">
-      <h2>HR Manager - Vacant</h2>
-      <p>Handles staff and member concerns, feedback, and internal issues with professionalism.</p>
-    </div>
-
-    <div class="section">
-      <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg" alt="Vacant">
-      <h2>PR Manager - Vacant</h2>
-      <p>Manages public relations, marketing, social media, and branding outreach.</p>
-    </div>
-
-    <div class="section">
-      <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg" alt="Vacant">
-      <h2>External Affairs - Vacant</h2>
-      <p>Responsible for code shares and collaboration with other Infinite Flight VAs/VOs.</p>
-    </div>
-
-    <div class="section">
-      <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg" alt="Vacant">
-      <h2>Staff Supervisor - Vacant</h2>
-      <p>Oversees all non-chief staff roles and ensures communication and accountability.</p>
-    </div>
+    <footer>
+      &copy; WestJet Virtual 2025<br>
+      WestJet Virtual is not affiliated or associated with WestJet Airlines in any way, shape, or form.
+    </footer>
   </div>
-
-  <footer>
-    <p>&copy; WestJet Virtual 2025</p>
-    <p>WestJet Virtual is not affiliated or associated with WestJet Airlines in any way, shape, or form.</p>
-  </footer>
 </body>
 </html>
