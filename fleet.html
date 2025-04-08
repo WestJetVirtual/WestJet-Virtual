@@ -1,136 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WestJet Virtual - Fleet</title>
-    <style>
-        /* Global Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #005a8f;
-            color: white;
-        }
-
-        header img {
-            max-width: 150px;
-            margin-bottom: 20px;
-        }
-
-        h1, h2 {
-            font-size: 2em;
-            color: #333;
-        }
-
-        nav {
-            background-color: #004a76;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .container {
-            padding: 20px;
-            background-color: white;
-            margin: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #004a76;
-            color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-
-        .fleet-item {
-            margin-bottom: 30px;
-        }
-
-        .fleet-item img {
-            width: 100%;
-            max-width: 600px;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
-
-        .fleet-item h3 {
-            color: #005a8f;
-        }
-
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Fleet - WestJet Virtual</title>
+  <style>
+    /* [Insert the same styles from the Home page here — copy from <style> tag in index.html] */
+    /* For brevity, paste the same CSS from the Home page here */
+  </style>
 </head>
 <body>
 
-<header>
-    <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg?ex=67f5a5eb&is=67f4546b&hm=40b4fedcf91413261f8e3084c5ce01d3730fd97d3837abe7a2cc0b7cae41a413&" alt="WestJet Virtual Logo">
-    <h1>WestJet Virtual Fleet</h1>
-</header>
+  <header>
+    <img src="https://www.westjet.com/content/dam/westjet/images/aircraft/exterior/737-max-8/landscape-16-9/230502-WestJet-MAX8-Clouds-1600x900.jpg" alt="WestJet Fleet">
+    <div class="header-content">
+      <h1>Our Fleet</h1>
+      <p>Explore the aircraft we operate in Infinite Flight</p>
+    </div>
+  </header>
 
-<nav>
+  <nav>
     <a href="index.html">Home</a>
     <a href="fleet.html">Fleet</a>
     <a href="staff.html">Staff</a>
-    <a href="contact.html">Contact</a>
-</nav>
+  </nav>
 
-<div class="container">
-    <div class="fleet-item">
-        <h3>Q400</h3>
-        <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/0/0/c/00c4b738732ab9f0760e3ec458d27a73720534d9.png" alt="Q400">
-        <p>The Bombardier Q400 is a regional turboprop aircraft used for short-haul flights, perfect for flying to smaller airports while maintaining high efficiency and speed.</p>
+  <div class="background-overlay"></div>
+
+  <div class="container">
+    <div class="card">
+      <h2>Bombardier Dash 8 Q400</h2>
+      <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/0/0/c/00c4b738732ab9f0760e3ec458d27a73720534d9.png" width="90%" />
+      <p>A regional turboprop perfect for short-haul flights across Canada with excellent performance on shorter runways.</p>
     </div>
 
-    <div class="fleet-item">
-        <h3>B737-700</h3>
-        <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/5/c/a/5caffe65095591bb3226a3458b03ee3e044dca68.png" alt="B737-700">
-        <p>The Boeing 737-700 is a popular single-aisle airliner that offers a great balance of performance and capacity, ideal for medium to short-haul flights.</p>
+    <div class="card">
+      <h2>Boeing 737-700</h2>
+      <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/5/c/a/5caffe65095591bb3226a3458b03ee3e044dca68.png" width="90%" />
+      <p>The reliable backbone of our medium-haul fleet, delivering comfort and efficiency to our passengers.</p>
     </div>
 
-    <div class="fleet-item">
-        <h3>B737-800</h3>
-        <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/2/2/f/22fd44a4a0fff6d282c9446b36147ce594c1f055.png" alt="B737-800">
-        <p>The Boeing 737-800 is an advanced version of the 737 series, offering increased efficiency and range for medium-haul flights, commonly used in many major airlines.</p>
+    <div class="card">
+      <h2>Boeing 737-800</h2>
+      <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/2/2/f/22fd44a4a0fff6d282c9446b36147ce594c1f055.png" width="90%" />
+      <p>Used widely across North America, the 737-800 offers excellent range and fuel economy for our pilots.</p>
     </div>
 
-    <div class="fleet-item">
-        <h3>B737-8MAX</h3>
-        <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/3/6/a/36abf67e1028f8f8b5247094bbac6c9d222f5647.png" alt="B737-8MAX">
-        <p>The Boeing 737 MAX 8 brings advanced aerodynamics, larger engines, and new winglets, allowing it to fly more efficiently while maintaining the same seating capacity.</p>
+    <div class="card">
+      <h2>Boeing 737 MAX 8</h2>
+      <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/3/6/a/36abf67e1028f8f8b5247094bbac6c9d222f5647.png" width="90%" />
+      <p>The latest in our narrow-body fleet, offering advanced avionics, fuel efficiency, and passenger comfort.</p>
     </div>
 
-    <div class="fleet-item">
-        <h3>B787-9</h3>
-        <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/9/4/8/948968c7592450d985780321559a665a77bcc6e7.png" alt="B787-9">
-        <p>The Boeing 787-9 Dreamliner is a long-range, wide-body aircraft that offers a smooth and comfortable flight experience on intercontinental flights, with impressive fuel efficiency.</p>
+    <div class="card">
+      <h2>Boeing 787-9 Dreamliner</h2>
+      <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/9/4/8/948968c7592450d985780321559a665a77bcc6e7.png" width="90%" />
+      <p>Our long-haul flagship, connecting continents with modern comfort, range, and technology.</p>
     </div>
-</div>
+  </div>
 
-<footer>
-    <p>&copy; WestJet Virtual 2025. WestJet Virtual is not affiliated or associated with WestJet Airlines in any way, shape, or form.</p>
-</footer>
+  <footer>
+    <p>&copy; WestJet Virtual 2025</p>
+    <p>WestJet Virtual is not affiliated or associated with WestJet Airlines in any way, shape, or form.</p>
+  </footer>
 
 </body>
 </html>
