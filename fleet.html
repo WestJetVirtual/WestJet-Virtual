@@ -3,220 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WestJet Virtual Fleet</title>
+    <title>WestJet Virtual - Fleet</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #e6f2f7;
-        }
-
-        header {
-            background-color: #006F8E;
-            color: #ffffff;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        header .logo {
-            width: 180px;
-            max-width: 100%;
-        }
-
-        /* Navbar Styling */
-        .navbar {
-            overflow: hidden;
-            background-color: #006F8E;
-        }
-
-        .navbar a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        .dropdown {
-            float: left;
-            overflow: hidden;
-        }
-
-        .dropdown .dropbtn {
-            font-size: 17px;
-            border: none;
-            outline: none;
-            color: white;
-            padding: 14px 16px;
-            background-color: #006F8E;
-            font-family: inherit;
-            margin: 0;
-        }
-
-        .navbar a:hover, .dropdown:hover .dropbtn {
-            background-color: #ddd;
-            color: black;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #006F8E;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            float: none;
-            color: white;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        h1, h2 {
-            color: #006F8E;
-        }
-
-        footer {
-            text-align: center;
-            background-color: #006F8E;
-            color: #ffffff;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-
-        .main-content {
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        .fleet-section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin-top: 40px;
-        }
-
-        .fleet-item {
-            background-color: #ffffff;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 10px;
-            width: 280px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-
-        .fleet-item:hover {
-            transform: scale(1.05);
-        }
-
-        .fleet-img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .fleet-title {
-            font-size: 1.5em;
-            color: #006F8E;
-            margin-top: 15px;
-        }
-
-        .fleet-description {
-            font-size: 1.1em;
-            color: #555;
-            margin-top: 10px;
-        }
-
+        /* Same styles as home.html for consistency */
+        /* Add the styles as above */
     </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <div class="dropdown">
-            <button class="dropbtn">Pages</button>
-            <div class="dropdown-content">
-                <a href="index.html">Home</a>
-                <a href="fleet.html">Fleet</a>
-                <a href="contact.html">Contact Us</a>
-                <!-- Add more links here as you create additional pages -->
-            </div>
-        </div>
+
+<header>
+    <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg?ex=67f5a5eb&is=67f4546b&hm=40b4fedcf91413261f8e3084c5ce01d3730fd97d3837abe7a2cc0b7cae41a413&" alt="WestJet Virtual Logo">
+    <h1>WestJet Virtual - Fleet</h1>
+</header>
+
+<nav class="nav-bar">
+    <a href="index.html">Home</a>
+    <a href="fleet.html">Fleet</a>
+    <a href="roles.html">Staff</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+    <h2>Our Fleet</h2>
+    <div class="fleet-item">
+        <h3>Q400</h3>
+        <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/0/0/c/00c4b738732ab9f0760e3ec458d27a73720534d9.png" alt="Q400">
+        <p>The Bombardier Q400 is a versatile regional aircraft used for short regional flights. It combines comfort and speed for efficient travel.</p>
     </div>
-
-    <header>
-        <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg?ex=67f5a5eb&is=67f4546b&hm=40b4fedcf91413261f8e3084c5ce01d3730fd97d3837abe7a2cc0b7cae41a413&" alt="WestJet Virtual Logo" class="logo">
-    </header>
-
-    <div class="main-content">
-        <h1>Our Fleet</h1>
-        <div class="fleet-section">
-
-            <!-- Q400 -->
-            <div class="fleet-item">
-                <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/0/0/c/00c4b738732ab9f0760e3ec458d27a73720534d9.png" alt="Q400" class="fleet-img">
-                <h2 class="fleet-title">Q400</h2>
-                <p class="fleet-description">The Bombardier Q400 is a turboprop aircraft known for its speed and fuel efficiency. It's ideal for short regional routes, combining comfort and performance for our virtual pilots.</p>
-            </div>
-
-            <!-- B737-700 -->
-            <div class="fleet-item">
-                <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/5/c/a/5caffe65095591bb3226a3458b03ee3e044dca68.png" alt="B737-700" class="fleet-img">
-                <h2 class="fleet-title">B737-700</h2>
-                <p class="fleet-description">The Boeing 737-700 is a versatile narrow-body aircraft that offers a great balance of range and capacity. Perfect for medium-haul routes, it's a favorite for virtual pilots seeking efficiency.</p>
-            </div>
-
-            <!-- B737-800 -->
-            <div class="fleet-item">
-                <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/2/2/f/22fd44a4a0fff6d282c9446b36147ce594c1f055.png" alt="B737-800" class="fleet-img">
-                <h2 class="fleet-title">B737-800</h2>
-                <p class="fleet-description">The Boeing 737-800 is one of the most popular airliners in the world, offering both performance and comfort. With a larger capacity than the 737-700, it's perfect for medium to long-haul routes.</p>
-            </div>
-
-            <!-- B737-8MAX -->
-            <div class="fleet-item">
-                <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/3/6/a/36abf67e1028f8f8b5247094bbac6c9d222f5647.png" alt="B737-8MAX" class="fleet-img">
-                <h2 class="fleet-title">B737-8MAX</h2>
-                <p class="fleet-description">The Boeing 737 MAX 8 is a more fuel-efficient version of the 737, offering longer range and enhanced performance. Ideal for longer flights, it's the modern choice for WestJet Virtual pilots.</p>
-            </div>
-
-            <!-- B787-9 -->
-            <div class="fleet-item">
-                <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/9/4/8/948968c7592450d985780321559a665a77bcc6e7.png" alt="B787-9" class="fleet-img">
-                <h2 class="fleet-title">B787-9</h2>
-                <p class="fleet-description">The Boeing 787-9 is a wide-body, long-haul aircraft known for its advanced technology, fuel efficiency, and passenger comfort. This aircraft is perfect for virtual international routes, providing a smooth and modern flying experience.</p>
-            </div>
-
-        </div>
+    <div class="fleet-item">
+        <h3>B737-700</h3>
+        <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/5/c/a/5caffe65095591bb3226a3458b03ee3e044dca68.png" alt="B737-700">
+        <p>The Boeing 737-700 is part of our narrow-body fleet, offering a perfect balance of efficiency and comfort for short-to-medium-haul routes.</p>
     </div>
+    <div class="fleet-item">
+        <h3>B737-800</h3>
+        <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/2/2/f/22fd44a4a0fff6d282c9446b36147ce594c1f055.png" alt="B737-800">
+        <p>The Boeing 737-800 is one of the most widely used aircraft worldwide, offering both comfort and fuel efficiency on various routes.</p>
+    </div>
+    <div class="fleet-item">
+        <h3>B737-8MAX</h3>
+        <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/3/6/a/36abf67e1028f8f8b5247094bbac6c9d222f5647.png" alt="B737-8MAX">
+        <p>The 737 MAX is the latest addition to our fleet, designed to deliver enhanced fuel efficiency and cutting-edge technology.</p>
+    </div>
+    <div class="fleet-item">
+        <h3>B787-9</h3>
+        <img src="https://global.discourse-cdn.com/infiniteflight/original/4X/9/4/8/948968c7592450d985780321559a665a77bcc6e7.png" alt="B787-9">
+        <p>The Boeing 787-9 Dreamliner is a long-haul aircraft, perfect for transatlantic flights, offering comfort and efficiency for longer journeys.</p>
+    </div>
+</div>
 
-    <footer>
-        <p>&copy; 2025 WestJet Virtual. All rights reserved.</p>
-    </footer>
+<footer>
+    <p>WestJet Virtual is not affiliated or associated with WestJet Airlines in any way, shape, or form.</p>
+</footer>
+
 </body>
 </html>
