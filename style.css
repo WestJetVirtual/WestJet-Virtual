@@ -104,10 +104,11 @@ nav.nav-links a:hover {
 }
 
 .ceo-profile img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Circle for profile picture */
     margin-right: 20px;
+    border: 3px solid #006f8e; /* Blue border for a clean look */
 }
 
 .ceo-info p {
