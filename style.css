@@ -89,7 +89,26 @@ header .nav-links .nav-link:hover {
     margin-bottom: 20px;
 }
 
-.message-ceo p {
+.ceo-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.ceo-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.ceo-message h3 {
+    font-size: 24px;
+}
+
+.ceo-message p {
     font-size: 18px;
 }
 
