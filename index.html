@@ -1,130 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WestJet Virtual - Home</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #e6f2f7;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #e6f2f7;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
 
-        header {
-            background-color: #006F8E;
-            color: #ffffff;
-            padding: 20px 0;
-            text-align: center;
-        }
+    header {
+        background-color: #006F8E;
+        color: #ffffff;
+        padding: 20px 0;
+        text-align: center;
+    }
 
-        header .logo {
-            width: 180px;
-            max-width: 100%;
-        }
+    header .logo {
+        width: 180px;
+        max-width: 100%;
+    }
 
-        /* Navbar Styling */
-        .navbar {
-            text-align: center;
-            background-color: #006F8E;
-            padding: 10px 0;
-        }
+    /* Navbar Styling */
+    .navbar {
+        text-align: center;
+        background-color: #006F8E;
+        padding: 10px 0;
+    }
 
-        .navbar button {
-            background-color: #ffffff;
-            color: #006F8E;
-            border: none;
-            padding: 14px 24px;
-            font-size: 17px;
-            cursor: pointer;
-            margin: 5px 15px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
+    .navbar button {
+        background-color: #1C97B7; /* Light blue, fitting with the WestJet theme */
+        color: #ffffff;
+        border: none;
+        padding: 14px 24px;
+        font-size: 17px;
+        cursor: pointer;
+        margin: 5px 15px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        border-radius: 5px; /* Rounded button edges for a modern look */
+    }
 
-        .navbar button:hover {
-            background-color: #006F8E;
-            color: white;
-        }
+    .navbar button:hover {
+        background-color: #0096C7; /* Darker blue for hover effect */
+        color: white;
+    }
 
-        h1, h2 {
-            color: #006F8E;
-        }
+    h1, h2 {
+        color: #006F8E;
+    }
 
-        footer {
-            text-align: center;
-            background-color: #006F8E;
-            color: #ffffff;
-            padding: 10px 0;
-            margin-top: auto; /* Ensures the footer sticks to the bottom of the page */
-        }
+    footer {
+        text-align: center;
+        background-color: #006F8E;
+        color: #ffffff;
+        padding: 10px 0;
+        margin-top: auto; /* Ensures the footer sticks to the bottom of the page */
+    }
 
-        .main-content {
-            padding: 40px 20px;
-            text-align: center;
-            flex-grow: 1;
-        }
+    .main-content {
+        padding: 40px 20px;
+        text-align: center;
+        flex-grow: 1;
+    }
 
-        .about-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 40px;
-        }
+    .about-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
 
-        .about-section img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 5px solid #006F8E;
-        }
+    .about-section img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 5px solid #006F8E;
+    }
 
-        .about-text {
-            margin-top: 20px;
-            font-size: 1.2em;
-            color: #555;
-        }
+    .about-text {
+        margin-top: 20px;
+        font-size: 1.2em;
+        color: #555;
+    }
 
-        /* Image Styling */
-        .hero-image {
-            width: 100%;
-            height: auto;
-            max-height: 500px;
-            object-fit: cover;
-        }
-    </style>
-</head>
-<body>
-    <!-- Navigation Bar -->
-    <div class="navbar">
-        <button onclick="location.href='index.html'">Home</button>
-        <button onclick="location.href='fleet.html'">Fleet</button>
-        <button onclick="location.href='contact.html'">Contact Us</button>
-    </div>
+    .about-us-section {
+        margin-top: 40px;
+        background-color: #f0f8ff;
+        padding: 30px;
+        border-radius: 8px;
+    }
 
-    <header>
-        <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg?ex=67f5a5eb&is=67f4546b&hm=40b4fedcf91413261f8e3084c5ce01d3730fd97d3837abe7a2cc0b7cae41a413&" alt="WestJet Virtual Logo" class="logo">
-    </header>
+    .about-us-text {
+        font-size: 1.2em;
+        color: #555;
+        line-height: 1.6;
+    }
 
-    <div class="main-content">
-        <h1>Welcome to WestJet Virtual</h1>
-
-        <!-- Hero Image -->
-        <img src="https://www.westjet.com/content/dam/westjet/images/aircraft/exterior/737-max-8/landscape-16-9/230502-WestJet-MAX8-Clouds-1600x900.jpg" alt="WestJet 737 MAX 8" class="hero-image">
-
-        <div class="about-section">
-            <img src="https://sea1.discourse-cdn.com/infiniteflight/user_avatar/community.infiniteflight.com/pilot_infiniteflight/288/1462536_2.png" alt="Pilot_InfiniteFlight" />
-            <h2>Message from our CEO: <a href="https://community.infiniteflight.com/u/pilot_infiniteflight/" target="_blank" style="color: #006F8E; text-decoration: none;">Pilot_InfiniteFlight</a></h2>
-            <p class="about-text">Welcome to WestJet Virtual! We aim to provide a professional and immersive virtual airline experience for the Infinite Flight community. Our fleet includes a variety of aircraft, ensuring that every flight is as realistic and enjoyable as possible. Join us today and experience the thrill of flying with WestJet Virtual!</p>
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2025 WestJet Virtual. All rights reserved.</p>
-        <p style="font-size: 0.9em;">WestJet Virtual is not affiliated or associated with WestJet Airlines in any way, shape, or form.</p>
-    </footer>
-</body>
-</html>
+    .hero-image {
+        width: 100%;
+        height: auto;
+        max-height: 500px;
+        object-fit: cover;
+    }
+</style>
