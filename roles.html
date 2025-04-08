@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WestJet Virtual - Staff</title>
     <style>
-        /* Global styles matching the home page */
+        /* Global Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -16,7 +16,7 @@
         header {
             text-align: center;
             padding: 20px;
-            background-color: #0071b1;
+            background-color: #005a8f;
             color: white;
         }
 
@@ -31,7 +31,7 @@
         }
 
         nav {
-            background-color: #005a8f;
+            background-color: #004a76;
             padding: 10px;
             text-align: center;
         }
@@ -55,39 +55,35 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .ceo-section {
-            text-align: center;
-        }
-
-        .ceo-section img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-        }
-
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #005a8f;
+            background-color: #004a76;
             color: white;
             position: fixed;
             width: 100%;
             bottom: 0;
         }
 
-        .staff-list {
-            list-style-type: none;
-            padding-left: 0;
+        .staff-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
         }
 
-        .staff-list li {
-            padding: 10px;
-            font-size: 1.2em;
+        .staff-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 20px;
         }
 
-        .staff-list li strong {
-            font-size: 1.4em;
-            color: #0071b1;
+        .staff-item h3 {
+            color: #005a8f;
+        }
+
+        .staff-item p {
+            margin: 5px 0;
         }
 
     </style>
@@ -96,7 +92,7 @@
 
 <header>
     <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg?ex=67f5a5eb&is=67f4546b&hm=40b4fedcf91413261f8e3084c5ce01d3730fd97d3837abe7a2cc0b7cae41a413&" alt="WestJet Virtual Logo">
-    <h1>WestJet Virtual - Staff</h1>
+    <h1>WestJet Virtual Staff</h1>
 </header>
 
 <nav>
@@ -107,33 +103,29 @@
 </nav>
 
 <div class="container">
-    <div class="ceo-section">
-        <h2>CEO - <a href="https://community.infiniteflight.com/u/pilot_infiniteflight/" target="_blank">Pilot_InfiniteFlight</a></h2>
-        <img src="https://sea1.discourse-cdn.com/infiniteflight/user_avatar/community.infiniteflight.com/pilot_infiniteflight/288/1462536_2.png" alt="Pilot_InfiniteFlight Profile Picture">
-        <p>Welcome to WestJet Virtual! I'm <strong>Pilot_InfiniteFlight</strong>, the Chief Executive Officer (CEO) of the airline. We are committed to providing a professional and immersive experience for all of our virtual pilots.</p>
+    <div class="staff-item">
+        <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg?ex=67f5a5eb&is=67f4546b&hm=40b4fedcf91413261f8e3084c5ce01d3730fd97d3837abe7a2cc0b7cae41a413&" alt="Pilot_InfiniteFlight">
+        <div>
+            <h3><a href="https://community.infiniteflight.com/u/pilot_infiniteflight" target="_blank">CEO - Pilot_InfiniteFlight</a></h3>
+            <p><strong>Chief Executive Officer</strong><br>Responsible for overall strategy and vision of WestJet Virtual.</p>
+        </div>
     </div>
 
-    <h2>Our Staff Members</h2>
-    <ul class="staff-list">
-        <li><strong>CEO</strong> - <a href="https://community.infiniteflight.com/u/pilot_infiniteflight/" target="_blank">Pilot_InfiniteFlight</a></li>
-        <li><strong>Chief Operating Officer (COO)</strong> - Vacant</li>
-        <li><strong>Chief Technology Officer (CTO)</strong> - Vacant</li>
-    </ul>
+    <!-- Other staff roles go here -->
+    <div class="staff-item">
+        <img src="https://via.placeholder.com/80" alt="Vacant">
+        <div>
+            <h3>COO - Vacant</h3>
+            <p><strong>Chief Operating Officer</strong><br>Responsible for daily operations of WestJet Virtual.</p>
+        </div>
+    </div>
 
-    <h2>Other Roles</h2>
-    <ul class="staff-list">
-        <li><strong>Recruiter</strong> - Vacant</li>
-        <li><strong>Route Manager</strong> - Vacant</li>
-        <li><strong>Event Manager</strong> - Vacant</li>
-        <li><strong>HR Manager</strong> - The HR Manager is responsible for maintaining a positive environment within the airline. They handle personnel issues, resolve conflicts, and ensure that all staff members are satisfied and motivated.</li>
-        <li><strong>PR Manager</strong> - Vacant</li>
-        <li><strong>External Relations</strong> - Vacant</li>
-        <li><strong>Staff Supervisor</strong> - Vacant</li>
-    </ul>
+    <!-- Add additional staff members here in similar format -->
+
 </div>
 
 <footer>
-    <p>WestJet Virtual is not affiliated or associated with WestJet Airlines in any way, shape, or form.</p>
+    <p>&copy; WestJet Virtual 2025. WestJet Virtual is not affiliated or associated with WestJet Airlines in any way, shape, or form.</p>
 </footer>
 
 </body>
