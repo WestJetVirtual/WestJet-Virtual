@@ -8,15 +8,20 @@
 
 body {
     background-color: #f0f5f9;
+    background-image: url('https://www.westjet.com/content/dam/westjet/images/aircraft/exterior/737-max-8/landscape-16-9/230502-WestJet-MAX8-Saskatchewan-1600x900.jpg'); /* WestJet MAX8 image */
+    background-size: cover;
+    background-position: center;
     color: #333;
 }
 
 /* Header Styles */
 header {
-    background-color: #006f8e; /* WestJet blue */
+    background-color: rgba(0, 111, 142, 0.85); /* WestJet blue with opacity for a subtle effect */
     padding: 10px 0;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
 }
 
 header .logo img {
@@ -31,17 +36,15 @@ nav.nav-links {
 }
 
 nav.nav-links a {
-    color: #fff;
+    color: white; /* Text color matches header */
     font-size: 18px;
     text-decoration: none;
     padding: 10px 18px;
-    background-color: #0085c2; /* WestJet light blue */
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 nav.nav-links a:hover {
-    background-color: #005e7d; /* WestJet darker blue */
+    color: #0085c2; /* WestJet light blue on hover */
 }
 
 /* Main Content Section */
