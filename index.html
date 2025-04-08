@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WestJet Virtual Airline</title>
+    <title>WestJet Virtual</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -39,39 +39,51 @@
         .container {
             padding: 20px;
         }
-        .hero-image {
-            width: 100%;
-            height: auto;
+        .hero-section {
+            background-image: url('https://www.westjet.com/content/dam/westjet/images/aircraft/exterior/737-max-8/landscape-16-9/230502-WestJet-MAX8-Clouds-1600x900.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            text-align: center;
+            color: white;
         }
-        .about-us {
+        .hero-section h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .hero-section p {
+            font-size: 1.2em;
+        }
+        .about-section {
             background-color: #ffffff;
-            padding: 20px;
-            margin-top: 20px;
+            padding: 50px 20px;
+            text-align: center;
+            margin-top: 40px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .about-us h2 {
-            text-align: center;
+        .about-section h2 {
+            margin-bottom: 20px;
         }
-        .about-us p {
-            text-align: center;
-            font-size: 18px;
-            line-height: 1.6;
+        .about-section p {
+            font-size: 1.1em;
+            margin-bottom: 30px;
         }
-        .ceo-message {
+        .ceo-section {
             background-color: #ffffff;
-            padding: 20px;
-            margin-top: 20px;
+            padding: 50px 20px;
+            margin-top: 40px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .ceo-message h3 {
             text-align: center;
         }
-        .ceo-message p {
-            font-size: 18px;
-            line-height: 1.6;
-            text-align: center;
+        .ceo-section h2 {
+            margin-bottom: 20px;
+        }
+        .ceo-section img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
         }
         footer {
             background-color: #333;
@@ -115,33 +127,37 @@
 
 <header>
     <img src="https://media.discordapp.net/attachments/1119104755613048916/1358934545965256776/image0.jpg?ex=67f5a5eb&is=67f4546b&hm=40b4fedcf91413261f8e3084c5ce01d3730fd97d3837abe7a2cc0b7cae41a413&" alt="WestJet Virtual Logo">
-    <h1>Welcome to WestJet Virtual Airline</h1>
+    <h1>WestJet Virtual</h1>
 </header>
 
 <nav class="nav-bar">
     <a href="index.html">Home</a>
     <a href="fleet.html">Fleet</a>
-    <a href="about.html">About Us</a>
+    <a href="roles.html">Our Roles</a>
     <a href="contact.html">Contact</a>
 </nav>
 
+<div class="hero-section">
+    <h1>Welcome to WestJet Virtual</h1>
+    <p>Your virtual airline experience awaits. Join us today and fly with the best!</p>
+</div>
+
 <div class="container">
-    <img src="https://www.westjet.com/content/dam/westjet/images/aircraft/exterior/737-max-8/landscape-16-9/230502-WestJet-MAX8-Clouds-1600x900.jpg" alt="WestJet Aircraft" class="hero-image">
-    
-    <div class="about-us">
+    <div class="about-section">
         <h2>About Us</h2>
-        <p>WestJet Virtual is a flight simulation group in Infinite Flight, dedicated to replicating the operations of WestJet Airlines. We offer a professional, friendly, and supportive environment for all aviation enthusiasts. Whether you're new to flying or a seasoned pro, we strive to bring an exciting and educational experience to our members. Our goal is to create a realistic virtual experience while fostering a fun and engaging community.</p>
+        <p>WestJet Virtual is a community-driven virtual airline for flight simulation enthusiasts. We strive to provide a realistic and fun experience, with a professional atmosphere for all our pilots. Whether you are a seasoned flight simulator user or just starting out, we welcome you to join us on our virtual flights!</p>
     </div>
 
-    <div class="ceo-message">
-        <h3>Message from our CEO Pilot_InfiniteFlight</h3>
-        <p>Welcome to WestJet Virtual! I'm Pilot_InfiniteFlight, and I’m thrilled to have you as part of our community. Our goal is to build a passionate team of individuals who share a love for aviation and flying. Whether you're just starting your journey or already an experienced pilot, we aim to provide a professional yet welcoming environment where you can thrive. I look forward to flying with you!</p>
-        <p><a href="https://community.infiniteflight.com/u/pilot_infiniteflight/" target="_blank">Click here to visit my IFC profile</a></p>
+    <div class="ceo-section">
+        <h2>Message from Our CEO, Pilot_InfiniteFlight</h2>
+        <a href="https://community.infiniteflight.com/u/pilot_infiniteflight/" target="_blank">
+            <img src="https://sea1.discourse-cdn.com/infiniteflight/user_avatar/community.infiniteflight.com/pilot_infiniteflight/288/1462536_2.png" alt="Pilot_InfiniteFlight Profile Picture">
+        </a>
+        <p>Welcome to WestJet Virtual! I'm Pilot_InfiniteFlight, the CEO of the airline. Our goal is to create an engaging and realistic virtual airline experience for all. We look forward to seeing you onboard!</p>
     </div>
 </div>
 
 <footer>
-    <p>© 2025 WestJet Virtual | All Rights Reserved</p>
     <p>WestJet Virtual is not affiliated or associated with WestJet Airlines in any way, shape, or form.</p>
 </footer>
 
